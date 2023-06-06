@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+.link-box{
+  width: 250px;
+  height: 86px;
+}
+
+
+.validation{
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.validation li{
+  width: 250px;
+  height: 37px;
+  background-color: gray;
+  background-image: url(./../images/validation_icon\ 2.png);
+  background-repeat: no-repeat;
+  background-position: 16px;
+  border-radius: 34px;
+  margin: 12px 0;
+}
+
+
+.validation a{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 37px;
+  color: black;
+}
+
+.link-text{
+  display: inline;  
+}
