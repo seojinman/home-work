@@ -1,0 +1,114 @@
+@import url(/css/normalize.css);
+@import url(/css/reset.css);
+@import url(/css/a11y.css);
+@import url(/css/theme.css);
+@import url(/css/base.css);
+
+
+*{
+  box-sizing:border-box;
+  padding: 0;
+}
+
+.mainbox{
+  width: 244px;
+  height: 161px;
+  background: linear-gradient(90deg, #ED552F 0%, #E8852E 100%);
+  box-shadow: 5px 5px 0px #AAAAAA;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.login{
+  width: 39px;
+  height: 23px;
+  font-weight: 700;
+  font-size: 14px;
+  color: yellow;
+  top: var(--spacing-sm);
+  left: var(--spacing-sm);
+  
+}
+
+.loginForm__Wrapper{
+  background-color: white;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.loginForm{
+  position: relative;
+  width: 210px;
+  height: 80px;
+  border-bottom: 1px solid lightgray;
+}
+
+
+.idinInput__label{
+  position: absolute;
+  width: 56px;
+  height: 21px;
+  top: 8px;
+  left: 8px;
+}
+.pwinInput__label{
+  position: absolute;
+  width: 56px;
+  height: 21px;
+  top: 37.5px;
+  left: 8px;
+}
+
+.idInput__input{
+  position: absolute;
+  top: 8px;
+  left: 64px;
+  width: 90px;
+  height: 24px;
+}
+.pwInput__input{
+  position: absolute;
+  top: 36px;
+  left: 64px;
+  width: 90px;
+  height: 24px;
+}
+
+.button{
+  position: absolute;
+  top: 8px;
+  right: 2px;
+  width: 50px;
+  height: 53px;
+  background: #ED552F;
+  color: var(--white);
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 13px;
+  border: 0;
+}
+
+
+
+.joinForm{
+  display: block;
+  padding-top: 4px;
+}
+.join{
+  float: left;
+  font-size: 14px;
+  width: 60px;
+  height: 28px;
+  padding-left:10px;
+}
+
+.find{
+  float: right;
+  font-size: 14px;
+  width: 125px;
+  height: 28px;
+  padding-right: 4px;
+  padding-top: 0px;
+}
