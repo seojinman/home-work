@@ -1,0 +1,79 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #fff;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.news {
+  display: grid;
+  width: 380px;
+  height: 200px;
+  gap: 12px;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title . . . . . . . . more more"
+    "divider divider divider divider divider divider divider divider divider . . ."
+    "image image image image imasge contents contents contents contents contents contents contents";
+}
+
+.news-title {
+  color: #ed552f;
+  grid-area: title;
+}
+
+.news-wrapper {
+  width: 57px;
+  grid-area: more;
+}
+
+.news-wrapper a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.divider {
+  width: 266px;
+  height: 1px;
+  background: linear-gradient(90deg, #a9a9a9 -1.32%, #ffffff 100%);
+  grid-area: divider;
+}
+
+.news-image {
+  grid-area: image;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.news-image img {
+  display: block;
+}
+
+.news-contents {
+  margin-top: 12px;
+  grid-area: contents;
+}
+
+.date {
+  margin-top: 4px;
+}
+
+.last-contents {
+  text-align: justify;
+  margin-top: 12px;
+}
