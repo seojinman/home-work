@@ -1,0 +1,85 @@
+@import url(/css/normalize.css);
+@import url(/css/reset.css);
+@import url(/css/a11y.css);
+@import url(/css/theme.css);
+@import url(/css/base.css);
+
+.mainbox{
+  width: 800px;
+  height: 800px;
+  margin: 50px;
+}
+
+.favorite{
+  width: 190px;
+  height: 170px;
+  background: linear-gradient(180deg, #CCCCCC 0%, #EEEEEE 100%);
+  border: 1px solid #A3A3A3;
+  border-radius: 5px;
+  padding: var(--spacing-sm);
+  position: relative;
+}
+
+.favorite-title{
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #181818;
+  margin-bottom: var(--spacing-xs);
+}
+
+.accentFavorite{
+  color: #ED552F;
+}
+
+.favorite__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.favorite__item {
+  counter-increment: number;
+  margin-bottom: var(--spacing-xs);
+  
+}
+
+.favorite__item::before {
+  content: counter(number);
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  line-height: 120%;
+  width: 20px;
+  height: 20px;
+  background: #A3A3A3;
+  border-radius: 5px;
+}
+
+.sprite {
+  background: url(./../images/rank.png) no-repeat;
+}
+
+.spriteup{
+  background-position: 155px 7px;
+}
+
+.spritedash{
+  background-position: 155px -15px;
+}
+
+.spritedown{
+  background-position: 155px -35px;
+}
+
+
+
+.favorite-more{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: var(--spacing-sm);
+  padding-right: var(--spacing-sm);
+  font-size: 14px;
+
+}
+
